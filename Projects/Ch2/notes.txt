@@ -1,0 +1,9 @@
+Chap2 Notes:
+
+I stumbled for a long time on how to even begin processing the ALU logic and converting it in to chips.
+It took a forum post that again reminded to view the appendix for full HDL capabilities (specifically what temp pins/buses could do), plus a reminder to build on past stuff, plus a nudge towards multiplexors, for everything to "aha" for me.
+The "aha" was that 1) this is a combinational logic problem that you do in one go, so you aren't 'assiging' to x and y like the pseudo code implies and 2) you're individually analyzing each input flag as select bits on a 16 bit multiplexor. With those things figured out, going down the specification was simply a matter of doing one at a time and feeding the x and y branch respectively.
+
+Ng was merely piping the MSB to out, and then for zr another nudge/reminder that you can use previous chips to test equality by or'ing each individual bit and then negating the result (since we want out==0 to be high/true/1).
+
+I do think this approach cruises up the abstraction level real fast and I don't feel like I'm doing the math as much, but to be able to cover this much ground in a course that's probably fine? I may need to slow it down myself to ensure I'm really grokking it!

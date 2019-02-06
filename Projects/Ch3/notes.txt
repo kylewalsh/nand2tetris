@@ -1,0 +1,5 @@
+Given that the DFF was provided, most of these were pretty straight-forward. Once you figured out how a binary register worked, then a 16-bit one wasn't so bad. 
+Then a RAM unit just uses a demultiplexer to pick the address and a multiplexer to unify the output.
+Each progressive RAM was just moving up the significant bits as the driver for a different demultiplexor.
+I needed some help from the forums to see the correlation between the Binary Memory Cell and the PC chip.
+http://nand2tetris-questions-and-answers-forum.32033.n3.nabble.com/Help-needed-with-PC-not-sure-where-to-get-output-from-td4030039.html

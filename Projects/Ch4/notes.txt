@@ -1,0 +1,1 @@
+To build towards the full Fill.asm program, I wrote the loop.asm program to practice looping and the fillsimple.asm program to do a fill without I/O. They key to unlocking this assignment was figuring out how to do pointers with the A register.
